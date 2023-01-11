@@ -1,0 +1,38 @@
+{
+  "name": "limoverse-cvo",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.1",
+    "@tanem/react-nprogress": "^5.0.22",
+    "ag-charts-community": "^6.2.1",
+    "ag-charts-react": "^6.2.1",
+    "axios": "^1.2.2",
+    "baseui": "^12.2.0",
+    "next": "^13.1.1",
+    "next-seo": "^4.28.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.41.3",
+    "react-redux": "^8.0.5",
+    "redux-persist": "^6.0.0",
+    "remixicon": "^2.5.0",
+    "sharp": "^0.31.3",
+    "styletron-engine-atomic": "^1.5.0",
+    "styletron-react": "^6.1.0",
+    "zustand": "^4.2.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "eslint": "^8.31.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-next": "^13.1.1",
+    "postcss": "^8.4.20",
+    "tailwindcss": "^3.2.4"
+  }
+}

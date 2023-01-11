@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  a {
+    @apply inline-block;
+  }
+
+  .bordered {
+    @apply border border-white/10;
+  }
+
+  .overlay-h {
+    height: auto;
+    transition: height 10s ease-in-out;
+  }
+
+  .card-wrapper:hover .overlay-h {
+    height: 120px;
+  }
+}
