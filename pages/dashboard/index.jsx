@@ -12,5 +12,4 @@ const index = () => (
   </Main>
 )
 
-// export default withAuth(index)
-export default index
+export default withAuth(index)

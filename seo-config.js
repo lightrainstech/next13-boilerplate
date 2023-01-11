@@ -1,9 +1,9 @@
 export const site_name = 'Next 13 Boilerplate'
-export const site_lead = 'The Token For Upgraded Life'
-export const site_url = 'https://cvo.limoverse.com/'
+export const site_lead = 'This is the subtitle when sharing on social media'
+export const site_url = 'https://lightrains.com/'
 export const site_preview_image = '/images/limo-og-graph-preview.jpg'
 export const site_description =
-  'LIMOVERSE is a powerful ecosystem built on web3 to empower people to take charge of their health and wellness using Personalized Lifestyle Management, which is called HEALTH 5.0'
+  'This is the description that shows when sharing on social media. Use this to explain briefely what the app is about.'
 
 const MetaTags = () => (
   <>

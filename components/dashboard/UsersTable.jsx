@@ -9,8 +9,6 @@ import { useState } from 'react'
 export default () => {
   const {
     control,
-    handleSubmit,
-    watch,
     formState: { errors }
   } = useForm()
 
@@ -56,7 +54,6 @@ export default () => {
 
   const UsersTable = () => {
     const [currentPage, setCurrentPage] = useState(1)
-    const [isInfoModalOpen, setIsInfoModalOpen] = useState(false)
 
     return (
       <>
