@@ -1,6 +1,5 @@
 import Router from 'next/router'
 import axios from 'axios'
-import { logout } from '../redux/storeSlice'
 import { store } from '../redux/store'
 
 const state = store.getState()
@@ -15,24 +14,15 @@ const axiosInstance = () => {
     }
   })
 
-  // Response interceptor to handle response errors
-  // instance.interceptors.response.use(
-  //   response => {
-  //     console.log('Response:', response)
-  //     return response
-  //   },
-  //   error => {
-  //     if (
-  //       error &&
-  //       error?.response &&
-  //       error?.response?.data?.response?.message === 'JWT_MALFORMED'
-  //     ) {
-  //       store.dispatch(logout())
-  //     }
-  //     console.error('Response error:', error)
-  //     return Promise.reject(error)
-  //   }
-  // )
+  instance.interceptors.response.use(
+    response => response,
+    error => {
+      if (typeof error.response === 'undefined') {
+        Router.push('/error')
+      }
+      return Promise.reject(error)
+    }
+  )
 
   return instance
 }
