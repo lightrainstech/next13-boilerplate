@@ -10,7 +10,7 @@ export default () => {
   const ErrorAlert = () => {
     const dispatch = useDispatch()
     useEffect(() => {
-      dispatch(logout)
+      dispatch(logout())
     }, [])
 
     return (
